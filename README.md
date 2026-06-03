@@ -2,7 +2,7 @@
 
 Project 1 — Number Guessing Game is the first milestone of the DecodeLabs Industrial Training Program (Batch 2026), focused on mastering Control Flow, Program State Management, and Real-Time User Interaction in Java.
 
-While the base requirement was a console-driven guessing game, this implementation is engineered at a professional, production-grade level — built with a JavaFX GUI, a clean MVC (Model-View-Controller) architecture, multi-class separation of concerns, multi-round session persistence, a live scoreboard system, and full defensive input validation.
+While the base requirement was a console-driven guessing game but wil create a GUI based system, this implementation is engineered at a professional, production-grade level — built with a JavaFX GUI, a clean MVC (Model-View-Controller) architecture, multi-class separation of concerns, multi-round session persistence, a live scoreboard system, and full defensive input validation.
 The project bridges two fundamental pillars of software engineering:
 
 Backend Logic — Stochastic number generation, iterative deduction loops, conditional branching, and state management via java.util.Random and Java control structures.
