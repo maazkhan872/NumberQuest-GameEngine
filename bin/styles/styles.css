@@ -1,0 +1,276 @@
+/*
+ * styles.css — JavaFX Application Stylesheet
+ * ─────────────────────────────────────────────────────────────────
+ * Professional dark-themed UI for DecodeLabs Number Game.
+ * Uses JavaFX CSS syntax (subset of standard CSS).
+ *
+ * Color Palette:
+ *   Background : #0f0f1a  (deep dark navy)
+ *   Card       : #1a1a2e  (dark card)
+ *   Primary    : #6c63ff  (purple accent)
+ *   Success    : #00d4aa  (teal green)
+ *   Danger     : #ff4757  (red)
+ *   Warning    : #ffa502  (orange)
+ *   Text       : #e8e8f0  (light)
+ *   Muted      : #8888aa  (muted)
+ *
+ * DecodeLabs Industrial Training — Batch 2026
+ */
+ 
+/* Root */
+.root-pane {
+    -fx-background-color: #0f0f1a;
+    -fx-padding: 0;
+}
+ 
+/* Main Card */
+.main-card {
+    -fx-background-color: #1a1a2e;
+    -fx-background-radius: 16;
+    -fx-border-color: #2d2d4e;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 16;
+    -fx-max-width: 580;
+    -fx-min-width: 480;
+    -fx-effect: dropshadow(gaussian, rgba(108,99,255,0.25), 32, 0, 0, 8);
+}
+ 
+/* Header */
+.header-section {
+    -fx-background-color: linear-gradient(to bottom, #16213e, #1a1a2e);
+    -fx-background-radius: 16 16 0 0;
+    -fx-padding: 28 32 20 32;
+    -fx-border-color: transparent transparent #2d2d4e transparent;
+    -fx-border-width: 0 0 1 0;
+}
+ 
+.title-label {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #6c63ff;
+    -fx-effect: dropshadow(gaussian, rgba(108,99,255,0.6), 12, 0, 0, 0);
+}
+ 
+.subtitle-label {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 11px;
+    -fx-text-fill: #5555aa;
+    -fx-padding: 4 0 0 0;
+}
+ 
+/* Stats Bar */
+.stats-bar {
+    -fx-background-color: #12122a;
+    -fx-padding: 16 32 16 32;
+    -fx-border-color: transparent transparent #2d2d4e transparent;
+    -fx-border-width: 0 0 1 0;
+}
+ 
+.stat-title {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 10px;
+    -fx-text-fill: #5555aa;
+    -fx-font-weight: bold;
+}
+ 
+.stat-value {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e8e8f0;
+}
+ 
+/* Attempts Section */
+.attempts-section {
+    -fx-padding: 18 32 16 32;
+    -fx-border-color: transparent transparent #2d2d4e transparent;
+    -fx-border-width: 0 0 1 0;
+}
+ 
+.attempts-title {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 11px;
+    -fx-text-fill: #8888aa;
+    -fx-font-weight: bold;
+}
+ 
+.attempts-count {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00d4aa;
+}
+ 
+.attempts-max {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 12px;
+    -fx-text-fill: #5555aa;
+}
+ 
+.attempts-progress {
+    -fx-pref-height: 8;
+    -fx-background-color: #0f0f1a;
+    -fx-background-radius: 4;
+    -fx-accent: #6c63ff;
+}
+ 
+.attempts-progress .track {
+    -fx-background-color: #2d2d4e;
+    -fx-background-radius: 4;
+}
+ 
+.attempts-progress .bar {
+    -fx-background-color: linear-gradient(to right, #6c63ff, #00d4aa);
+    -fx-background-radius: 4;
+    -fx-background-insets: 0;
+}
+ 
+/* Game Area  */
+.game-area {
+    -fx-padding: 28 32 24 32;
+}
+ 
+.instruction-label {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 13px;
+    -fx-text-fill: #8888aa;
+}
+ 
+// Input Row
+.input-row {
+    -fx-padding: 4 0 4 0;
+}
+ 
+.guess-input {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 18px;
+    -fx-pref-height: 48;
+    -fx-background-color: #0f0f1a;
+    -fx-background-radius: 8;
+    -fx-border-color: #2d2d4e;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 8;
+    -fx-text-fill: #e8e8f0;
+    -fx-prompt-text-fill: #44446a;
+    -fx-padding: 0 16 0 16;
+}
+ 
+.guess-input:focused {
+    -fx-border-color: #6c63ff;
+    -fx-effect: dropshadow(gaussian, rgba(108,99,255,0.35), 10, 0, 0, 0);
+}
+ 
+.submit-btn {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-pref-height: 48;
+    -fx-pref-width: 110;
+    -fx-background-color: #6c63ff;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+}
+ 
+.submit-btn:hover {
+    -fx-background-color: #7d75ff;
+    -fx-effect: dropshadow(gaussian, rgba(108,99,255,0.5), 14, 0, 0, 0);
+}
+ 
+.submit-btn:pressed {
+    -fx-background-color: #5a52dd;
+}
+ 
+/* Feedback Label */
+.feedback-label {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #8888aa;
+    -fx-padding: 8 0 4 0;
+    -fx-min-height: 36;
+}
+ 
+.feedback-label.correct {
+    -fx-text-fill: #00d4aa;
+    -fx-effect: dropshadow(gaussian, rgba(0,212,170,0.6), 12, 0, 0, 0);
+}
+ 
+.feedback-label.too-high {
+    -fx-text-fill: #ff4757;
+}
+ 
+.feedback-label.too-low {
+    -fx-text-fill: #ffa502;
+}
+ 
+.feedback-label.game-over {
+    -fx-text-fill: #ff4757;
+    -fx-effect: dropshadow(gaussian, rgba(255,71,87,0.5), 12, 0, 0, 0);
+}
+ 
+.feedback-label.error {
+    -fx-text-fill: #ff6b81;
+}
+ 
+/* Hint Label*/
+.hint-label {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 12px;
+    -fx-text-fill: #5555aa;
+    -fx-padding: 0 0 4 0;
+}
+ 
+/* Action Bar */
+.action-bar {
+    -fx-padding: 16 32 20 32;
+    -fx-border-color: #2d2d4e transparent transparent transparent;
+    -fx-border-width: 1 0 0 0;
+}
+ 
+.play-again-btn {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-pref-height: 40;
+    -fx-pref-width: 160;
+    -fx-background-color: #00d4aa;
+    -fx-background-radius: 8;
+    -fx-text-fill: #0f0f1a;
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+}
+ 
+.play-again-btn:hover {
+    -fx-background-color: #00eabb;
+    -fx-effect: dropshadow(gaussian, rgba(0,212,170,0.5), 12, 0, 0, 0);
+}
+ 
+.new-session-btn {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 13px;
+    -fx-pref-height: 40;
+    -fx-pref-width: 160;
+    -fx-background-color: transparent;
+    -fx-background-radius: 8;
+    -fx-border-color: #2d2d4e;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 8;
+    -fx-text-fill: #8888aa;
+    -fx-cursor: hand;
+}
+ 
+.new-session-btn:hover {
+    -fx-border-color: #6c63ff;
+    -fx-text-fill: #6c63ff;
+}
+ 
+/* Footer */
+.footer-label {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 10px;
+    -fx-text-fill: #33334a;
+    -fx-padding: 0 32 16 32;
+}
